@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Mariya Isakova](https://up.htmlacademy.ru/htmlcss/37/user/2362153).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Волошко](https://htmlacademy.ru/profile/id1655583).
 
 ---
 
