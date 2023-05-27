@@ -5,7 +5,7 @@
     <title>Седона</title>
   </head>
   <body>
-    <header class="main-header" data-test="header">
+    <header class="main-header">
       <img class="logo" src="#" alt="логотип Седоны">
       <nav class="navigation">
         <ul class="navigation-list">
@@ -31,17 +31,15 @@
             <a class="navigation-link" href="#">
               <span class="visually-hidden">
                 Лайки
-              </span>
+              </span>12
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="btn navigation-link" href="#">Хочу сюда</a>
-          </li>
         </ul>
+        <a class="btn navigation-link" href="#">Хочу сюда</a>
       </nav>
     </header>
-    <main class="main-index" data-test="main">
-      <section class="hero" data-test="hero">
+    <main class="main-index" >
+      <section class="hero" >
         <h1 class="visually-hidden">Седона</h1>
         <img src="#" alt="Welcome to Sedona">
         <p>Седона — небольшой городок в Аризоне,
@@ -49,68 +47,58 @@
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
       <section class="advantages" data-test="advantages">
-        <table class="advantages-table">
-          <tr>
-            <td class="advantages-cell cell-blue">
+        <ul class="advantages-list">
+            <li class="advantages-item item-blue">
               <h3>настоящий городок</h3>
               <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            </td>
-            <td class="advantages-cell cell-img" colspan="2">
+            </li>
+            <li class="advantages-item item-img" colspan="2">
               <img src="#" alt="Домик с мансардой в отеле Седоны">
-            </td>
-          </tr>
-          <tr>
-            <td class="advantages-cell cell-light-blue">
+            </li>
+            <li class="advantages-item item-light-blue">
               <h3>небольшая площадь</h3>
               <p>Все достопримечательности находятся очень близко</p>
-            </td>
-            <td class="advantages-cell cell-grey">
+            </li>
+            <li class="advantages-item item-grey">
               <h3>красивая дорога</h3>
               <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </td>
-            <td class="advantages-cell cell-light-blue">
+            </li>
+            <li class="advantages-item item-light-blue">
               <h3>мало туристов</h3>
               <p>Большинство едет в Гранд Каньон и толпится там</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="advantages-cell cell-img" colspan="2">
+            </li>
+            <li class="advantages-item item-img" colspan="2">
               <img src="#" alt="Каньон Седоны">
-            </td>
-            <td class="advantages-cell cell-blue">
+            </li>
+            <li class="advantages-item item-blue">
               <h3>Там есть мост дьявола</h3>
               <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            </td>
-          </tr>
-        </table>
+            </li>
+          </ul>
         <div class="welcome">
-          <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-          <p>Опытный персонал и качественное обслуживание!</p>
-        </div>
-        <section class="advantages-live">
-          <table class="advantages-table">
-            <tr>
-              <td class="advantages-cell cell-light-blue">
-                <img src="#" alt="home">
-                <h3>жильё</h3>
-                <p>Рекомендуем пожить в настоящем мотеле,
-                  всё как в кино!</p>
-              </td>
-              <td class="advantages-cell cell-grey">
-                <img src="#" alt="burger">
-                <h3>еда</h3>
-                <p>Всегда заказывайте
-                  топовый фирменный бургер, вы не разочаруетесь!</p>
-              </td>
-              <td class="advantages-cell cell-light-blue">
-                <img src="#" alt="gift">
-                <h3>сувениры</h3>
-                <p>Не только китайского,
-                  но и настоящего местного производства!</p>
-              </td>
-            </tr>
-          </table>
-        </section>
+        <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+        <p>Опытный персонал и качественное обслуживание!</p>
+      </div>
+        <ul class="advantages-table">
+            <li class="advantages-item item-light-blue">
+              <img src="#" alt="home">
+              <h3>жильё</h3>
+              <p>Рекомендуем пожить в настоящем мотеле,
+                всё как в кино!</p>
+            </li>
+            <li class="advantages-item item-grey">
+              <img src="#" alt="burger">
+              <h3>еда</h3>
+              <p>Всегда заказывайте
+                топовый фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="advantages-item item-light-blue">
+              <img src="#" alt="gift">
+              <h3>сувениры</h3>
+              <p>Не только китайского,
+                но и настоящего местного производства!</p>
+            </li>
+        </ul>
       </section>
 
       <div class="search" data-test="search">
@@ -118,7 +106,7 @@
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="btn" href="catalog.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </div>
-      <section class="newsletter" data-test="subscribe">
+      <section class="newsletter">
         <h2>подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -128,10 +116,8 @@
         </form>
       </section>
     </main>
-    <footer class="main-footer" data-test="footer">
-      <ul class="footer-list">
-        <li class="footer-item">
-          <ul class="social-list">
+    <footer class="main-footer">
+        <ul class="social-list">
             <li class="social-item">
               <img src="" alt="вконтакте">
               <span class="visually-hidden">вконтакте</span>
@@ -144,15 +130,9 @@
               <img src="" alt="youTube">
               <span class="visually-hidden">youTube</span>
             </li>
-          </ul>
-        </li>
-        <li>
-          <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </li>
-        <li>
-          <a href="#" class="html-academy"><img src="#" alt="ссылка на html-academy"></a>
-        </li>
-      </ul>
+        </ul>
+      <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a href="#" class="html-academy"><img src="#" alt="ссылка на html-academy"></a>
     </footer>
   </body>
 </html>
