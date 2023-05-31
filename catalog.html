@@ -5,11 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог гостиниц</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <header class="main-header">
     <a href="index.html" class="navigation-logo">
-      <img class="logo" src="#" alt="логотип Седоны">
+      <img class="logo" src="images/logo.svg" width="140" height="70" alt="логотип Седоны">
     </a>
     <nav class="navigation">
       <ul class="navigation-list">
@@ -26,6 +27,7 @@
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
+            <img class="header-search" src="images/search.svg" width="20" height="20" alt="поиск">
             <span class="visually-hidden">
               Поиск
             </span>
@@ -33,9 +35,11 @@
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">
+            <img class="favorites" src="images/heart.svg" width="20" height="20" alt="Избранное">
+            <span class="favorites">12</span>
             <span class="visually-hidden">
               Лайки
-            </span>12
+            </span>
           </a>
         </li>
       </ul>
@@ -50,6 +54,7 @@
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
+              <img class="home" src="images/home-bred.svg" width="13" height="15" alt="Переход на главную страницу">
               <span class="visually-hidden">Главная</span>
             </a>
           </li>
@@ -117,16 +122,17 @@
             <label class="control">До
               <input class="control-input" type="text" name="control-group" value="9000" >
             </label>
-          </fieldset>
+              <input type="range" id="price" name="price" min="0" max="14000">
+           </fieldset>
           <button class="btn btn-view" type="submit">применить</button>
-          <button class="btn btn-reset" type="submit">сбросить</button>
+          <button class="btn btn-reset" type="reset">сбросить</button>
         </form>
       </section>
     </div>
 
     <section class="catalog-cards">
       <div class="catalog-cards-header">
-        <h2>найдено гостиниц: 38</h2>
+        <h2>найдено гостиниц: <span>38</span></h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвое</option>
           <option value="popular">Сначала популярное</option>
@@ -135,16 +141,19 @@
         <ul class="view-list">
           <li class="view-item">
             <a href="#" class="btn button-light">
+              <img class="view-cards" src="images/views/cards.svg" width="48" height="48" alt="Вид карточки">
               <span class="visually-hidden">Показать список</span>
             </a>
           </li>
           <li class="view-item">
             <a href="#" class="btn button-light">
+              <img class="view-screen" src="images/views/screen.svg" width="48" height="48" alt="Вид на весь экран">
               <span class="visually-hidden">Показать на весь экран</span>
             </a>
           </li>
           <li class="view-item">
             <a class="btn button-light" href="#">
+              <img class="view-arrow" src="images/views/arrows.svg" width="48" height="48" alt="Вид списком">
               <span class="visually-hidden">Показать карточки</span>
             </a>
           </li>
@@ -152,7 +161,7 @@
       </div>
       <ul class="housing-list">
         <li class="housing-card">
-          <img src="#" alt="Amara Resort & Spa">
+          <img class="villas" src="images/villas/amara-resort.jpg" width="300" height="212" alt="Amara Resort & Spa">
           <h3 class="hotel-title">Amara Resort & Spa</h3>
           <div class="price-wrapper">
             <p class="hotel-title-price">Гостиница </p>
@@ -163,12 +172,12 @@
             <a class="btn favorites" href="#">в избранное</a>
           </div>
           <div class="rating">
-            <img src="#" alt="рейтингв звёздах" class="stars">
-            <p>Рейтинг: <span class="rating-value">8.5</span></p>
+            <img src="images/villas/stars4.svg" alt="Квалификация отеля - 4 звезды" class="stars">
+            <p>Рейтинг: 8.5</p>
           </div>
         </li>
         <li class="housing-card">
-          <img src="#" alt="Villas at Poco Diablo">
+          <img class="villas" src="images/villas/villas-poco.jpg" width="300" height="212" alt="Villas at Poco Diablo">
           <h3 class="hotel-title">Villas at Poco Diablo</h3>
           <div class="price-wrapper">
             <p class="hotel-title-price">Гостиница </p>
@@ -179,12 +188,12 @@
             <a class="btn favorites active" href="#">в избранном</a>
           </div>
           <div class="rating">
-            <img src="#" alt="рейтинг в звёздах" class="stars">
-            <p>Рейтинг: <span class="rating-value">6.9</span></p>
+            <img src="images/villas/stars4.svg" alt="Квалификация отеля - 4 звезды" class="stars">
+            <p>Рейтинг: 6.9</p>
           </div>
         </li>
         <li class="housing-card">
-          <img src="#" alt="Desert Quail Inn">
+          <img class="villas" src="images/villas/desert-quail.jpg" width="300" height="212" alt="Desert Quail Inn">
           <h3 class="hotel-title">Desert Quail Inn</h3>
           <div class="price-wrapper">
             <p class="hotel-title-price">Гостиница </p>
@@ -195,12 +204,12 @@
             <a class="btn favorites" href="#">в избранное</a>
           </div>
           <div class="rating">
-            <img src="#" alt="рейтинг в звёздах" class="stars">
-            <p>Рейтинг: <span class="rating-value">8.5</span></p>
+            <img src="images/villas/stars3.svg" alt="Квалификация отеля - 3 звезды" class="stars">
+            <p>Рейтинг: 8.5</p>
           </div>
         </li>
         <li class="housing-card">
-          <img src="#" alt="GreenTree Inn">
+          <img class="villas" src="images/villas/green-tree.jpg" width="300" height="212" alt="GreenTree Inn">
           <h3 class="hotel-title">GreenTree Inn</h3>
           <div class="price-wrapper">
             <p class="hotel-title-price">Гостиница </p>
@@ -211,14 +220,14 @@
             <a class="btn favorites" href="#">в избранное</a>
           </div>
           <div class="rating">
-            <img src="#" alt="рейтинг в звёздах" class="stars">
-            <p>Рейтинг: <span class="rating-value">5.0</span></p>
+            <img src="images/villas/stars2.svg" alt="Квалификация отеля - 2 звезды" class="stars">
+            <p>Рейтинг: 5.0</p>
           </div>
         </li>
       </ul>
       <ul class="pagination">
         <li class="pagination-item">
-          <a class="pagination-link pagination-current">1</a>
+          <a class="pagination-link" href="#">1</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">2</a>
@@ -230,7 +239,7 @@
           <a class="pagination-link" href="#">4</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link pagination-next" href="#">
+          <a class="pagination-link" href="#">...
             <span class="visually-hidden">промежуточные страницы</span>
           </a>
         </li>
@@ -252,22 +261,28 @@
   </main>
 
   <footer class="main-footer">
-      <ul class="social-list">
-          <li class="social-item">
-            <img src="" alt="вконтакте">
-            <span class="visually-hidden">вконтакте</span>
-          </li>
-          <li class="social-item">
-            <img src="" alt="телеграм">
-            <span class="visually-hidden">телеграм</span>
-          </li>
-          <li class="social-item">
-            <img src="" alt="youTube">
-            <span class="visually-hidden">youTube</span>
-          </li>
-      </ul>
+    <ul class="social-list">
+      <li class="social-item">
+        <a href="#" class="vk">
+          <img src="images/social-icon/vk.svg" width="24" height="14" lang="en"  alt="Vkontakte">
+          <span class="visually-hidden">вконтакте</span>
+        </a>
+      </li>
+      <li class="social-item">
+        <a href="#" class="telegram">
+          <img src="images/social-icon/telegram.svg" width="18" height="16" lang="en" alt="Telegram">
+          <span class="visually-hidden">телеграм</span>
+        </a>
+      </li>
+      <li class="social-item">
+        <a href="#" class="youtube">
+          <img src="images/social-icon/youtube.svg" width="22" height="17" lang="en" alt="youTube">
+          <span class="visually-hidden">youTube</span>
+        </a>
+      </li>
+    </ul>
     <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-    <a href="#" class="html-academy"><img src="#" alt="ссылка на html-academy"></a>
+    <a href="#" class="html-academy"><img src="images/logo-academy.svg" width="115" height="33" alt="ссылка на html-academy"></a>
   </footer>
 </body>
 </html>
