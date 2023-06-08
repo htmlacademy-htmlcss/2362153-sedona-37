@@ -20,15 +20,13 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  background-color: #fff;
+  background-color: #F2F2F2;;
   color: #000;
   margin: 0;
 }
 
 img {
   max-width: 100%;
-  height: auto;
-  object-fit: contain;
 }
 
 .visually-hidden {
@@ -38,6 +36,12 @@ img {
 
 
 /* header */
+
+.main-header {
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 .navigation-list {
   list-style: none;
@@ -85,19 +89,30 @@ img {
 /* Блок-герой */
 
 .hero {
-  background-image: url(../images/hero-block-decor.jpg);
-  /* Как правильно задавать: (ширину и высоту) или (100% auto?) */
-  /* background-size: 100% auto; */
-  width: 1200px;
-  height: 485px;
+  background: linear-gradient(#fff, #b6d5e8, #81B3D3) ;
+  background-image: url(../images/hero-block.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.main-index {
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.main-catalog {
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 /* Advantages */
 
 .advantages {
-  background-color: #fff;
   color: #000;
+  text-align: center;
 }
 
 .advantages h2 {
@@ -105,12 +120,10 @@ img {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  text-align: center;
   }
 
 .advantages p {
   color: #333;
-  text-align: center;
 }
 
 .advantages-list {
@@ -121,7 +134,6 @@ img {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  text-align: center;
   text-transform: uppercase;
   text-decoration: underline;
   text-decoration-color: rgba(0, 0, 0, 0.3);
@@ -133,7 +145,6 @@ img {
 .advantages-item p{
   font-size: 18px;
   line-height: 21px;
-  text-align: center;
 }
 
 .light-background {
@@ -151,12 +162,10 @@ img {
 .dark-background h3 {
   color: #fff;
   text-decoration-color: rgba(255, 255, 255, 0.3);
-  text-align: center;
 }
 
 .dark-background p{
   color: #fff;
-  text-align: center;
 }
 
 /* Welcome  */
@@ -200,6 +209,7 @@ img {
   height: 72px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 }
 .food {
   display: block;
@@ -209,6 +219,7 @@ img {
   height: 72px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 }
 .gift {
   display: block;
@@ -218,6 +229,7 @@ img {
   height: 72px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 }
 
 /* Search  */
@@ -256,10 +268,9 @@ img {
 }
 
 .newsletter-index {
-  /* width: 1200px;
-  height: 415px; */
-  background-image: url(../images/mailing.png);
-  background-size: 100% auto;
+  background: linear-gradient(#82B3D3, #183f79) ;
+  background-image: url(../images/mailing.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -281,7 +292,8 @@ img {
 
  .main-footer {
   background-color: #fff;
-  color: #000;
+  max-width: 1200px;
+  margin: 0 auto;
  }
 
  .social-list {
@@ -292,10 +304,9 @@ img {
 /* Фильтры в каталоге */
 
 .filter-wrapper {
-  /* width: 1200px;
-  height: 415px; */
-  background-image: url(../images/filtres.png);
-  background-size: 100% auto;
+  background: linear-gradient(#82B3D3, #183f79) ;
+  background-image: url(../images/filtres.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
 }
