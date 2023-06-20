@@ -607,6 +607,8 @@ img {
 .filter-housing {
   margin-right: 140px;
 }
+
+
 /*
 .control-input[type="checkbox"] {
   padding: 5px;
@@ -676,6 +678,12 @@ input[type="radio" i] {
   cursor: pointer;
 }
 
+.control span {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+}
+
 .input-wrapper {
   display: flex;
 }
@@ -715,6 +723,7 @@ input[type="radio" i] {
 }
 
 .select-control{
+  position: relative;
   margin-right: 70px;
   width: 292px;
   min-height: 49px;
@@ -727,7 +736,18 @@ input[type="radio" i] {
   color: #333;
   cursor: pointer;
   box-sizing: border-box;
+  /* appearance: none; */
 }
+/*
+.select-control::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../images/modal/select.svg);
+  background-repeat: no-repeat;
+} */
 
 .view-list {
   width: 160px;
@@ -784,13 +804,19 @@ input[type="radio" i] {
 }
 
 .housing-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   max-width: 340px;
   padding: 20px;
   box-sizing: border-box;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
 }
-
+.villas-describe {
+  display: flex;
+  flex-direction: column;
+}
 .hotel-title {
   color: #000;
   text-decoration: none;
@@ -811,6 +837,7 @@ input[type="radio" i] {
 
 .price-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
@@ -914,7 +941,7 @@ input[type="radio" i] {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   text-decoration: none;
   background-color: #82B3D3;
