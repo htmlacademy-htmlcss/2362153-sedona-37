@@ -37,7 +37,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="btn navigation-link" href="#">Хочу сюда</a>
+          <a class="btn navigation-link" href="catalog.htmls">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
@@ -112,11 +112,13 @@
           <fieldset class="catalog-filter-group group-price">
             <legend class="catalog-filter-title">Стоимость, ₽</legend>
             <div class="input-wrapper">
-              <label class="control">От
-                <input class="control-input" type="text" name="control-group" value="0" >
+              <label class="control">
+                <span class="input-word">от</span>
+                <input class="control-input start-price" type="text" name="control-group" value="0" >
               </label>
-              <label class="control">До
-                <input class="control-input" type="text" name="control-group" value="9000" >
+              <label class="control">
+                <span class="input-word">до</span>
+                <input class="control-input end-price" type="text" name="control-group" value="9000" >
               </label>
             </div>
               <input class="range" type="range" id="range-price" name="price" min="0" max="14000">
@@ -139,17 +141,60 @@
         </select>
         <ul class="view-list">
           <li class="view-item">
-            <a class="btn-cards cards view-active" href="#">
+            <a class="btn-cards view-active" href="#">
+              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_84302_418)">
+                <path d="M4 0H0V6H4V0Z" fill="black"/>
+                <path d="M16 0H12V6H16V0Z" fill="black"/>
+                <path d="M10 0H6V6H10V0Z" fill="black"/>
+                <path d="M4 8H0V14H4V8Z" fill="black"/>
+                <path d="M16 8H12V14H16V8Z" fill="black"/>
+                <path d="M10 8H6V14H10V8Z" fill="black"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_84302_418">
+                <rect width="16" height="14" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
               <span class="visually-hidden">Показать каталог в виде карточек</span>
             </a>
           </li>
           <li class="view-item">
-            <a class="btn-cards slider" href="#" aria-hidden="true">
+            <a class="btn-cards" href="#" aria-hidden="true">
+              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_84302_249)">
+                <path d="M16 12H0V14H16V12Z" fill="black"/>
+                <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_84302_249">
+                <rect width="16" height="14" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
               <span class="visually-hidden">Показать каталог в виде слайдера</span>
             </a>
           </li>
           <li class="view-item">
-            <a class="btn-cards arrow" href="#">
+            <a class="btn-cards" href="#">
+              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_84302_342)">
+                <path d="M2 0H0V2H2V0Z" fill="black"/>
+                <path d="M16 0H4V2H16V0Z" fill="black"/>
+                <path d="M2 4H0V6H2V4Z" fill="black"/>
+                <path d="M16 4H4V6H16V4Z" fill="black"/>
+                <path d="M2 8H0V10H2V8Z" fill="black"/>
+                <path d="M16 8H4V10H16V8Z" fill="black"/>
+                <path d="M2 12H0V14H2V12Z" fill="black"/>
+                <path d="M16 12H4V14H16V12Z" fill="black"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_84302_342">
+                <rect width="16" height="14" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
               <span class="visually-hidden">Показать каталог в виде списка</span>
             </a>
           </li>
@@ -174,7 +219,7 @@
           <div class="rating">
             <p class="star-4"></p>
             <span class="visually-hidden" aria-hidden="true">Квалификация отеля - 4 звезды</span>
-            <p>Рейтинг: 8.5</p>
+            <p class="rating-number">Рейтинг: 8.5</p>
           </div>
         </li>
         <li class="housing-card">
@@ -196,7 +241,7 @@
           <div class="rating">
               <p class="star-4"></p>
               <span class="visually-hidden" aria-hidden="true">Квалификация отеля - 4 звезды</span>
-            <p>Рейтинг: 6.9</p>
+            <p class="rating-number">Рейтинг: 6.9</p>
           </div>
         </li>
         <li class="housing-card">
@@ -218,7 +263,7 @@
           <div class="rating">
             <p class="star-3"></p>
             <span class="visually-hidden" aria-hidden="true">Квалификация отеля - 3 звезды</span>
-            <p>Рейтинг: 8.5</p>
+            <p class="rating-number">Рейтинг: 6.9</p>
           </div>
         </li>
         <li class="housing-card">
@@ -240,7 +285,7 @@
           <div class="rating">
             <p class="star-2"></p>
             <span class="visually-hidden" aria-hidden="true">Квалификация отеля - 2 звезды</span>
-            <p>Рейтинг: 5.0</p>
+            <p class="rating-number">Рейтинг: 5.0</p>
           </div>
         </li>
       </ul>
@@ -271,7 +316,7 @@
     <section class="newsletter" data-test="subscribe">
       <div class="newsletter-wrapper">
         <h2 class="title">подпишитесь на рассылку</h2>
-        <p class="subscribe">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="subscribe">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="field-email"  placeholder="Ваш e-mail" type="email" name="newsletter-email">
           <button class="btn btn-newsletter" type="submit">подписаться</button>
