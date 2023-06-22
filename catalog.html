@@ -114,7 +114,7 @@
             <div class="input-wrapper">
               <label class="control">
                 <span class="input-word">от</span>
-                <input class="control-input start-price" type="text" name="control-group" value="0" >
+                <input class="control-input start-price" type="text" name="control-group" value="0">
               </label>
               <label class="control">
                 <span class="input-word">до</span>
@@ -134,11 +134,13 @@
     <section class="catalog-cards" data-test="catalog">
       <div class="catalog-cards-header">
         <h2 class="title-cards">найдено гостиниц: <span>38</span></h2>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешёвое</option>
-          <option value="popular">Сначала популярное</option>
-          <option value="expensive">Сначала дорогое</option>
-        </select>
+        <div class="select-wrapper">
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap">Сначала дешёвое</option>
+            <option value="popular">Сначала популярное</option>
+            <option value="expensive">Сначала дорогое</option>
+          </select>
+        </div>
         <ul class="view-list">
           <li class="view-item">
             <a class="btn-cards view-active" href="#">
