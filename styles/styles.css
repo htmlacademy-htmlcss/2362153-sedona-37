@@ -639,6 +639,12 @@ img {
   line-height: 21px;
   cursor: pointer;
 }
+.breadcrumbs-link:hover {
+  opacity: .6;
+}
+.breadcrumbs-link:active {
+  opacity: .3;
+}
 
 .breadcrumbs-item::after {
   position: absolute;
