@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог гостиниц</title>
   <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.svg" type="image/x-icon">
 </head>
 <body>
   <header class="main-header" data-test="header">
@@ -58,11 +59,11 @@
           </li>
         </ol>
       </header>
-      <section class="catalog-filters">
+      <section class="catalog-filters" data-test="filter">
         <h2 class="visually-hidden" aria-hidden="true">Список товаров с фильтрами</h2>
         <form class="catalog-filter" action="#" method="get">
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Инфраструктура</legend>
+            <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -89,7 +90,7 @@
           </fieldset>
 
           <fieldset class="catalog-filter-group filter-housing">
-          <legend class="catalog-filter-title">Тип жилья</legend>
+          <legend class="catalog-filter-title">Тип жилья:</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
@@ -151,7 +152,7 @@
         <h2 class="title-cards">найдено гостиниц: <span>38</span></h2>
         <div class="select-wrapper" aria-disabled="false">
           <select class="select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешёвое</option>
+            <option value="cheap">Сначала дешевые</option>
             <option value="popular">Сначала популярное</option>
             <option value="expensive">Сначала дорогое</option>
           </select>
@@ -260,7 +261,7 @@
           <div class="rating">
               <p class="star-4"></p>
               <span class="visually-hidden" aria-hidden="true">Квалификация отеля - 4 звезды</span>
-            <p class="rating-number">Рейтинг: 6.9</p>
+            <p class="rating-number">Рейтинг: 9.2</p>
           </div>
         </li>
         <li class="housing-card">

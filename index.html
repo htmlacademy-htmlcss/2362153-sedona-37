@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.svg" type="image/x-icon">
   </head>
   <body>
     <header class="main-header" data-test="header">
@@ -56,7 +57,7 @@
         <ul class="advantages-list">
             <li class="advantages-item dark-background">
               <div class="item-wrapper">
-                <h3 class="item-title"> настоящий городок</h3>
+                <h3 class="item-title">настоящий городок</h3>
                 <p class="item-subscribe item-subscribe-dark">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <img class="item-attic" src="images/advantages/advantage-attic.jpg" width="800" height="385" alt="Вид мансарды в гостинице.">
@@ -75,7 +76,7 @@
               <p class="item-subscribe">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
 
-            <li class="advantages-item dark-background">
+            <li class="advantages-item dark-background-reverse">
               <div class="item-wrapper">
                 <h3 class="item-title">Там есть <br> мост дьявола</h3>
                 <p class="item-subscribe item-subscribe-dark">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -85,26 +86,26 @@
           </ul>
       </section>
 
-      <section class="welcome">
+      <section class="welcome" data-test="service">
         <div class="welcome-title-wrapper">
           <h2 class="title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
           <p class="subscribe">Опытный персонал и качественное обслуживание!</p>
         </div>
         <ul class="welcome-list">
             <li class="welcome-item light-background">
-              <p class="hotels"></p>
+              <span class="hotels"></span>
               <h3 class="welcome-item-title">жильё</h3>
-              <p class="welcome-item-subscribe">Рекомендуем пожить <br> в настоящем мотеле,<br>
+              <p class="welcome-item-subscribe">Рекомендуем пожить <br>в настоящем мотеле,<br>
                 всё как в кино!</p>
             </li>
             <li class="welcome-item ">
-              <p class="food"></p>
+              <span class="food"></span>
               <h3 class="welcome-item-title">еда</h3>
               <p class="welcome-item-subscribe">Всегда заказывайте <br>
                 топовый фирменный бургер, <br> вы не разочаруетесь!</p>
             </li>
             <li class="welcome-item light-background">
-              <p class="gift"></p>
+              <span class="gift"></span>
               <h3 class="welcome-item-title">сувениры</h3>
               <p class="welcome-item-subscribe">Не только китайского, <br>
                 но и настоящего местного <br> производства!</p>
@@ -115,7 +116,7 @@
       <section class="search" data-test="search">
         <h2 class="title">Заинтересовались?</h2>
         <p class="subscribe">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="btn btn-search" href="catalog.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        <button class="btn-search" >ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
       </section>
 
       <section class="newsletter newsletter-index" data-test="subscribe">
@@ -165,7 +166,7 @@
       </div>
     </footer>
 
-    <div class="modal-container modal-container-close">
+    <div class="modal-container" data-test="modal">
       <div class="modal modal-search">
         <button class="modal-close">
           <span class="visually-hidden">Закрыть</span>
@@ -207,12 +208,12 @@
               <p class="field-group">
                 <label class="children-label" for="children">Дети:</label>
                 <span class="tooltip">
-                  <button class="tooltip-toggle" type="button">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
                     <svg class="tooltip-info" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/>
                     </svg>
                   </button>
-                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
                 <div class="field-people-wrapper">
                   <input class="search-form-field field-people" type="number" name="children" id="children" value="2">
@@ -234,5 +235,7 @@
         </section>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
