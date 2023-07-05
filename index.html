@@ -173,7 +173,7 @@
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-          <form class="search-form"  method="post">
+          <form class="search-form" action="#" method="post">
             <p class="field-group">
               <label class="date-in" for="date-in">Дата Заезда:
                   <span class="date-icon"></span>
@@ -189,7 +189,7 @@
               </label>
             </p>
             <div class="people-count-wrapper">
-              <p class="field-group">
+              <div class="field-group">
                 <label class="adults-label" for="adults">Взрослые:</label>
                 <div class="field-people-wrapper">
                   <input class="search-form-field field-people" type="number" name="adults" id="adults" value="2">
@@ -204,8 +204,8 @@
                     </svg>
                   </button>
                 </div>
-              </p>
-              <p class="field-group">
+              </div>
+              <div class="field-group">
                 <label class="children-label" for="children">Дети:</label>
                 <span class="tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
@@ -228,13 +228,15 @@
                     </svg>
                   </button>
                 </div>
-              </p>
+              </div>
             </div>
             <button class="btn-modal-search">найти</button>
           </form>
         </section>
       </div>
     </div>
+
+    <!-- Использован только для появление модального окна при нажатии на кнопку в секции поиска гостиницы -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
   </body>
