@@ -593,6 +593,8 @@ img {
  }
 
  .contacts-phone {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 600px;
   color: #000000;
   text-decoration: none;
