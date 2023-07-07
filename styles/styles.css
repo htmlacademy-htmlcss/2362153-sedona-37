@@ -221,7 +221,7 @@ img {
 .hero {
   width: 1200px;
   margin: 0 auto;
-  background-color: linear-gradient(#ffffff, #b6d5e8, #81b3d3) ;
+  background: linear-gradient(#ffffff, #b6d5e8, #81b3d3) ;
   background-image: url(../images/hero-block.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -480,7 +480,7 @@ img {
 }
 
 .newsletter-index {
-  background-color: linear-gradient(#82b3d3, #183f79) ;
+  background: linear-gradient(#82b3d3, #183f79) ;
   background-image: url(../images/mailing.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -636,7 +636,7 @@ img {
   margin: 0 auto;
   margin-bottom: 51px;
   border: 0;
-  background-color: linear-gradient(#82b3d3, #183f79) ;
+  background: linear-gradient(#82b3d3, #183f79) ;
   background-image: url(../images/filtres.jpg);
   background-size: cover;
   background-repeat: no-repeat;
