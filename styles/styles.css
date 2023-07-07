@@ -665,7 +665,7 @@ img {
 
 .breadcrumbs-item {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   position: relative;
   margin-right: 28px;
 }
@@ -697,7 +697,8 @@ img {
 .breadcrumbs-item::after {
   position: absolute;
   content: "";
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   right: -20px;
   width: 13px;
   height: 15px;
@@ -792,6 +793,7 @@ img {
   border-radius: 4px 0 0 4px;
   margin-right: 2px;
 }
+
 .start-price::-webkit-outer-spin-button,
 .start-price::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -805,6 +807,7 @@ img {
 .end-price {
   border-radius: 0 4px 4px 0;
 }
+
 .end-price::-webkit-outer-spin-button,
 .end-price::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -994,8 +997,10 @@ img {
   color: #333333;
   cursor: pointer;
   box-sizing: border-box;
-  appearance: none;
   background-color: #ffffff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .select-wrapper {
@@ -1549,20 +1554,26 @@ color: rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
 }
 
+.popup-label-text {
+  width: 135px;
+}
+/*
+.field-group + .field-people-wrapper {
+  margin-bottom: 48px;
+} */
+
 .field-group {
   position: relative;
   margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 48px;
-}
-
-.field-group + .field-people-wrapper {
-  margin-bottom: 48px;
+  margin-bottom: 23px;
 }
 
 .field-group label {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -1641,7 +1652,8 @@ color: rgba(255, 255, 255, 0.3);
   position: absolute;
   width: 16px;
   height: 15px;
-  top: 17px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 21px;
   background-image: url(../images/modal/date.svg);
   background-position: center;
@@ -1654,12 +1666,16 @@ color: rgba(255, 255, 255, 0.3);
   font-weight: 700;
   line-height: 24px;
   width: 440px;
-  padding: 12px 20px;
+  padding: 12px 50px 12px 20px;
   border: none;
   border-radius: 4px;
   background-color: #f2f2f2;
   box-sizing: border-box;
   cursor: pointer;
+}
+
+.search-field-wrapper {
+  position: relative;
 }
 
 .search-form-field[type=text] {
@@ -1672,6 +1688,7 @@ color: rgba(255, 255, 255, 0.3);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 24px;
 }
 
 .people-count-wrapper:last-child {
@@ -1684,11 +1701,13 @@ color: rgba(255, 255, 255, 0.3);
 
 .children-label {
   margin-right: 83px;
+  max-width: 50px;
 }
 
 .field-people {
   margin: 0;
   margin-right: 88px;
+  padding: 12px 35px;
   width: 110px;
   min-height: 48px;
   text-align: center;
@@ -1706,7 +1725,6 @@ color: rgba(255, 255, 255, 0.3);
 .field-people[type='number'] {
   -moz-appearance: textfield;
 }
-
 
 .field-people-wrapper {
   position: relative;
@@ -1793,9 +1811,10 @@ color: rgba(255, 255, 255, 0.3);
 }
 
 .field-info {
-  position: absolute;
-  top: 52px;
-  left: 157px;
+  width: 100%;
+  text-align: left;
+  padding-left: 156px;
+  padding-top: 4px;
   color: #333333;
   margin: 0;
   font-size: 16px;
