@@ -1676,6 +1676,7 @@ color: rgba(255, 255, 255, 0.3);
 
 .search-field-wrapper {
   position: relative;
+  margin: 0;
 }
 
 .search-form-field[type=text] {
