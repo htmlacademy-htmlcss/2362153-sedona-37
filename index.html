@@ -5,6 +5,7 @@
     <title>Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
   </head>
   <body>
     <div class="container-wrapper">
@@ -176,25 +177,32 @@
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="search-form" action="#" method="post">
-            <p class="field-group">
-              <label class="date-in" for="date-in">Дата Заезда:
-                  <span class="date-icon"></span>
-                  <input class="search-form-field" type="text" name="date-in" id="date-in" value="27 апреля 2020" required>
-                  <span class="field-info field-info-error ">Мы не можем отправить вас в прошлое.</span>
+            <div class="field-group">
+              <label class="date-in" for="date-in">
+                  <span class="popup-label-text">Дата Заезда:</span>
+                  <div class="search-field-wrapper">
+                    <span class="date-icon"></span>
+                    <input class="search-form-field" type="text" name="date-in" id="date-in" value="27 апреля 2020" placeholder="Укажите дату" required>
+                  </div>
+                    <span class="field-info field-info-error ">Мы не можем отправить вас в прошлое.</span>
               </label>
-            </p>
-            <p class="field-group">
-              <label class="date-in" for="date-out">Дата Выезда:
-                  <span class="date-icon"></span>
-                  <input class="search-form-field" type="text" name="date-out" id="date-out" value="1 сентября 2023" required>
+            </div>
+            <div class="field-group">
+              <label class="date-in" for="date-out">
+                  <span class="popup-label-text">Дата Выезда:</span>
+
+                  <div class="search-field-wrapper">
+                    <input class="search-form-field" type="text" name="date-out" id="date-out" value="1 сентября 2023" placeholder="Укажите дату" required>
+                    <span class="date-icon"></span>
+                  </div>
                   <span class="field-info ">На эти даты есть свободные номера. Пока есть.</span>
               </label>
-            </p>
+            </div>
             <div class="people-count-wrapper">
               <div class="field-group">
                 <label class="adults-label" for="adults">Взрослые:</label>
                 <div class="field-people-wrapper">
-                  <input class="search-form-field field-people" type="number" name="adults" id="adults" value="2" required>
+                  <input class="search-form-field field-people" type="number" name="adults" id="adults" value="2" min="0" max="100" required>
                   <button class="minus" type="button">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
@@ -218,7 +226,7 @@
                   <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
                 <div class="field-people-wrapper">
-                  <input class="search-form-field field-people" type="number" name="children" id="children" value="2">
+                  <input class="search-form-field field-people" type="number" name="children" id="children" value="2" min="0" max="100">
                   <button class="minus" type="button">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
