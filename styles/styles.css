@@ -21,7 +21,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -151,7 +151,7 @@ img {
 .header-search {
   display: block;
   margin: 0;
-  background-image: url(../images/search.svg);
+  background-image: url("../images/search.svg");
   min-height: 20px;
   width: 19px;
   background-repeat: no-repeat;
@@ -160,7 +160,7 @@ img {
 }
 
 .header-search:hover {
-  background-image: url(../images/search-hover.svg);
+  background-image: url("../images/search-hover.svg");
 }
 
 .header-search:active {
@@ -186,7 +186,7 @@ img {
   display: block;
   position: relative;
   margin: 0;
-  background-image: url(../images/heart.svg);
+  background-image: url("../images/heart.svg");
   min-width: 20px;
   min-height: 20px;
   background-repeat: no-repeat;
@@ -195,7 +195,7 @@ img {
 }
 
 .heart:hover {
-  background-image: url(../images/heart-hover.svg);
+  background-image: url("../images/heart-hover.svg");
 }
 
 .heart:active {
@@ -222,7 +222,7 @@ img {
   width: 1200px;
   margin: 0 auto;
   background: linear-gradient(#ffffff, #b6d5e8, #81b3d3) ;
-  background-image: url(../images/hero-block.jpg);
+  background-image: url("../images/hero-block.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -410,7 +410,7 @@ img {
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
-  background-image: url(../images/advantages/home.svg);
+  background-image: url("../images/advantages/home.svg");
   width: 75px;
   height: 72px;
   background-repeat: no-repeat;
@@ -422,7 +422,7 @@ img {
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
-  background-image: url(../images/advantages/food.svg);
+  background-image: url("../images/advantages/food.svg");
   width: 75px;
   height: 72px;
   background-repeat: no-repeat;
@@ -434,7 +434,7 @@ img {
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
-  background-image: url(../images/advantages/gift.svg);
+  background-image: url("../images/advantages/gift.svg");
   width: 75px;
   height: 72px;
   background-repeat: no-repeat;
@@ -481,7 +481,7 @@ img {
 
 .newsletter-index {
   background: linear-gradient(#82b3d3, #183f79) ;
-  background-image: url(../images/mailing.jpg);
+  background-image: url("../images/mailing.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -637,7 +637,7 @@ img {
   margin-bottom: 51px;
   border: 0;
   background: linear-gradient(#82b3d3, #183f79) ;
-  background-image: url(../images/filtres.jpg);
+  background-image: url("../images/filtres.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
@@ -673,7 +673,7 @@ img {
 .home {
   display: block;
   margin: 0;
-  background-image: url(../images/home-bred.svg);
+  background-image: url("../images/home-bred.svg");
   width: 13px;
   height: 15px;
   background-repeat: no-repeat;
@@ -702,7 +702,7 @@ img {
   right: -20px;
   width: 13px;
   height: 15px;
-  background-image: url(../images/modal/breadcrumps.svg);
+  background-image: url("../images/modal/breadcrumps.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -800,7 +800,7 @@ img {
     margin: 0;
 }
 
-.start-price[type='number'] {
+.start-price[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -814,7 +814,7 @@ img {
     margin: 0;
 }
 
-.end-price[type='number'] {
+.end-price[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -872,7 +872,8 @@ img {
   left: 50%;
   width: 12px;
   height: 12px;
-  background-image: url(../images/modal/tick.svg);background-position: center;
+  background-image: url("../images/modal/tick.svg");
+  background-position: center;
   content: "";
   transform: translateX(-50%) translateY(-50%);
 }
@@ -1016,13 +1017,13 @@ img {
   transform: translateY(3px);
   z-index: 1;
   height: 100%;
-  background-image: url(../images/modal/select.svg);
+  background-image: url("../images/modal/select.svg");
   background-position:top 40% right 20%;
   background-repeat: no-repeat;
 }
 
 .select-wrapper[aria-disabled="true"]::after{
-  background-image: url(../images/modal/selector-disabled.svg);
+  background-image: url("../images/modal/selector-disabled.svg");
 }
 
 .select-control:hover {
@@ -1195,7 +1196,7 @@ img {
   height: 37px;
   margin: 0;
   padding: 0;
-  background-image: url(../images/villas/stars2.svg);
+  background-image: url("../images/villas/stars2.svg");
   object-fit: contain;
   background-repeat: no-repeat;
   margin-right: auto;
@@ -1206,7 +1207,7 @@ img {
   width: 140px;
   height: 37px;
   margin: 0;
-  background-image: url(../images/villas/stars3.svg);
+  background-image: url("../images/villas/stars3.svg");
   background-repeat: no-repeat;
   margin-right: auto;
   }
@@ -1216,12 +1217,12 @@ img {
   width: 140px;
   height: 37px;
   margin: 0;
-  background-image: url(../images/villas/stars4.svg);
+  background-image: url("../images/villas/stars4.svg");
   background-repeat: no-repeat;
   margin-right: auto;
   }
 
-  /* Пагинация */
+/* Пагинация */
 
 .pagination {
   display: flex;
@@ -1526,7 +1527,7 @@ color: rgba(255, 255, 255, 0.3);
   height: 52px;
   border-radius: 50%;
   background-color: #f2f2f2;
-  background-image: url(../images/modal/cross.svg);
+  background-image: url("../images/modal/cross.svg");
   background-position: center;
   background-repeat: no-repeat;
   border: none;
@@ -1557,10 +1558,6 @@ color: rgba(255, 255, 255, 0.3);
 .popup-label-text {
   width: 135px;
 }
-/*
-.field-group + .field-people-wrapper {
-  margin-bottom: 48px;
-} */
 
 .field-group {
   position: relative;
@@ -1655,7 +1652,7 @@ color: rgba(255, 255, 255, 0.3);
   top: 50%;
   transform: translateY(-50%);
   right: 21px;
-  background-image: url(../images/modal/date.svg);
+  background-image: url("../images/modal/date.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1723,7 +1720,7 @@ color: rgba(255, 255, 255, 0.3);
     margin: 0;
 }
 
-.field-people[type='number'] {
+.field-people[type="number"] {
   -moz-appearance: textfield;
 }
 
